@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="kund.css">
+    <script src="Kun.js"></script>
+    <script src="Validation.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/2.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h2>bestilling av kinobiletter</h2>
+        <div class="col-md-6">
+        <div class="form">
+            <div class="form-group">
+        <tr>
+            <td><label for="velg"> velg film</label></td>
+            <td><select id="velg">
+                <option selected="selected">velg film her</option>
+                <option>film1</option>
+                <option>film2</option>
+                <option>film3</option>
+            </select></td>
+            <td><span id="velg1" style="color: red"></span></td>
+        </tr>
+            </div>
+       <div class="form-group">
+
+        <tr>
+            <td><label for="antall"> antall</label></td>
+            <td><input type="number" id="antall" onchange="vAntall(this.value)"></td>
+            <td><span id="antall1" style="color: red"></span></td>
+        </tr>
+       </div>
+
+
+            <div class="form-group">
+            <tr>
+                <td><label for="fornavn"> fornavn</label></td>
+                <td><input type="text" id="fornavn" placeholder="Skriv inn fornavn" onchange="vFornavn(this.value)" ></td>
+                <td><span id="fornavn1" style="color: red"></span></td>
+            </tr>
+            </div>
+            <div class="form-group">
+            <tr>
+                <td><label for="etternavn"> etternavn</label></td>
+                <td><input type="text" id="etternavn" placeholder="skriv inn etternavn" onchange="vEtternavn(this.value)"></td>
+                <td><span id="etternavn1" style="color: red"></span></td>
+            </tr>
+            </div>
+            <div class="form-group">
+            <tr>
+                <td><label for="telefon">telefonnr</label> </td>
+                <td><input type="tel" id="telefon" minlength="8" maxlength="8" placeholder="skriv inn telefonnr" onchange="vTlf(this.value)"></td>
+                <td><span id="telefon1" style="color: red"></span></td>
+            </tr>
+            </div>
+            <div class="form-group">
+            <tr>
+                <td><label for="email"> epost</label></td>
+                <td><input type="email" id="email" placeholder="skriv inn epost adresse" onchange="vEpost(this.value)"></td>
+                <td><span id="email1" style="color: red"></span></td>
+            </tr>
+            </div>
+            <br>
+
+        <br>
+        </div>
+            <div class="form-group">
+        <button class="btn btn-primary" onclick="valider()">kjøp billett</button>
+            </div>
+        <br><br>
+
+    </div>
+    <div class="col-md-6">
+        <h3>antall billeter</h3>
+        <div id="resultat"></div>
+        <br><br>
+        <div class="form-group">
+        <button class="btn btn-danger" onclick="slett()">slett alle billettene</button>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+</html>

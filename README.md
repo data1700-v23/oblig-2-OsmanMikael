@@ -1,11 +1,11 @@
 Oblig 2
 =======
-OsloMet brukernavn: 
+OsloMet brukernavn: s374196
 
-GitHub brukernavn: 
+GitHub brukernavn: OsmanMikael
 
-Github repo URL: 
+Github repo URL: https://github.com/data1700-v23/oblig-2-OsmanMikael
 
-Fullt navn: 
+Fullt navn: Osman Mahmoud Mikael
 
 Kort beskrivelse av applikasjon (5-10 setninger):
